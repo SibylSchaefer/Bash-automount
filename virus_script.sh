@@ -31,7 +31,7 @@ sudo mount -o ro,loop,nodev,noexec,nosuid,noatime /mnt/transferfiles/${accession
 
 check_mount
 
-sudo clamscan -r /mnt/iso > "/mnt/transferfiles/${accession}/${accession}_${digital_media}/${accession}_${digital_media}_scan.txt"
+sudo clamscan -r /mnt/disk > "/mnt/transferfiles/${accession}/${accession}_${digital_media}/${accession}_${digital_media}_scan.txt"
 
 sudo umount /mnt/disk
 check_mount
